@@ -13,7 +13,7 @@ Ce smart contract vous permet donc de transférer des tokens SLY entre différen
 
 La fonction transfer permet de transférer des tokens d'un compte à un autre en vérifiant que l'adresse qui appelle la fonction a suffisamment de tokens pour transférer la valeur demandée.
 
-Le smart contract stocke les balances des différents comptes dans la variable balances, qui est un mapping de type address => uint256. Cela signifie que chaque adresse possède une balance associée, qui est un entier non-signé de 256 bits.
+Le smart contract stocke les balances des différents comptes dans la variable balances, qui est un mapping de type `address => uint256`. Cela signifie que chaque adresse possède une balance associée, qui est un entier non-signé de 256 bits.
 
 La fonction burn permet de brûler des tokens en vérifiant que l'adresse qui appelle la fonction a suffisamment de tokens pour brûler la valeur demandée. Cela permet de diminuer la quantité totale de tokens en circulation, ce qui est utile pour mettre en œuvre une stratégie de déflation.
 
