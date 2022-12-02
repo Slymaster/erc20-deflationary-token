@@ -1,7 +1,7 @@
 # erc20-deflationary-token
 Ce smart contract crée un token appelé Slymaster avec le code d'actif SLY.
 
-Il stocke les balances des différents comptes dans la variable balances, qui est un mapping de type `address => uint256`. Cela signifie que chaque adresse peut avoir une balance de tokens associée, qui est stockée dans la variable balances sous la forme balances[adresse].
+Il stocke les balances des différents comptes dans la variable balances, qui est un mapping de type `address => uint256`. Cela signifie que chaque adresse peut avoir une balance de tokens associée, qui est stockée dans la variable balances sous la forme `balances[adresse]`.
 
 Lorsque la fonction transfer est appelée, elle vérifie d'abord que l'adresse qui appelle la fonction a suffisamment de tokens pour transférer la valeur demandée en utilisant la syntaxe `require(balances[msg.sender] >= _value, "Not enough balance")`. Si cette condition n'est pas remplie, la fonction s'arrête et renvoie un message d'erreur indiquant que la balance est insuffisante.
 
